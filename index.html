@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Alura logo">
+    </header>
+    <div class="container">
+        <div class="input-text">
+            <textarea class="text" id="text" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info">
+                <div class="alert">
+                    <img src="./assets/exclamation.png" alt="Alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button class="crypt" onclick="encryptText()">Encriptar</button>
+                    <button class="decrypt" onclick="decryptText()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="align-right">
+            <div class="text-transformed" id="result">
+                <img src="./assets/muneco.png" alt="">
+                <div class="message">
+                    <p class="no-message">Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o Desencriptar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Andrea Gómez - Oracle Next Education - 2024</footer>
+    <script src="app.js"></script>
+</body>
+</html>
